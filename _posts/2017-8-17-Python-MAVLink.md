@@ -69,12 +69,7 @@ bindings. For example to send a
 vehicle._master.mav.set_position_target_local_ned_send(...)
 ```
 
+TLDR; Under the hood DroneKit uses the pymavlink module which includes an auto-generated Python MAVLink
+implementation. If you have DroneKit/pymavlink installed you can find this API
+in `pymavlink/dialects`. 
 
-
-
-# Gazebo MOCAP
-
-Gazebo uses the ENU [refererence](http://docs.flytbase.com/docs/FlytSim/native/launch.html) (east, north, up)
-while PX4 is oriented using
-[NED](https://dev.px4.io/en/ros/external_position_estimation.html) (north, east,
-down).
