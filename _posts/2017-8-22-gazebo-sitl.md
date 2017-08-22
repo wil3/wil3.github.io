@@ -6,16 +6,16 @@ title: Understanding the IRIS with Standoffs Demo
 Proper testing of a flight controller (FC) is crucial for safety and continuous integration. 
 Software in the 
 loop (SITL) allows us to run an FC in a simulated environment. Many
-FC firmwares support for SITL including
+FC firmwares support SITL including
 [PX4](https://dev.px4.io/en/simulation/gazebo.html) and
 [Betaflight](https://github.com/betaflight/betaflight/tree/master/src/main/target/SITL)
-which allow the FC to execute on a x86 Linux machine and interact with the
+which allows the FC to execute on an x86 Linux machine and interact with the
 [Gazebo simulator](http://gazebosim.org/).
-In this write up will be looking specifically at Betaflight.
+In this write up we will be looking specifically at Betaflight.
 
 
 # Betaflight SITL 
-When the firmware is complied and run for SITL a TCP 
+When the firmware is [complied](http://gazebosim.org/tutorials?tut=components) and run for SITL a TCP 
 server is started to receive [MultiWii commands](http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol), and a UDP server to communicate with Gazebo 
 through a Gazebo plugin called ArduCopterPlugin.  
 
@@ -37,7 +37,7 @@ Before we send commands to the FC we need to get the quadcopter running in the s
 ```
 ./obj/main/betaflight_SITL.elf
 ```
-And then start Gazebo with thee ArduCopter demo,
+And then start Gazebo with the ArduCopter demo,
 ```
 cd /usr/share/gazebo-8/worlds
 gazebo --verbose ./iris_arducopter_demo.world
@@ -58,11 +58,10 @@ which is an SDF file. This SDF file assembles the quadcopters parts such as the
 frame, gimbal and rotors as well as loading the all
 the necessary plugins (libArduCopterPlugin, and libLiftDragPlugin).
 
-The  
-`iris_with_standoffs`model is the  quadcopter frame/body which exists
+The `iris_with_standoffs` model is the  quadcopter frame/body which exists
 [here](https://bitbucket.org/osrf/gazebo_models/src/73f89ecb1622f0bce7f9da3827958c40e62fb83f/iris_with_standoffs/?at=default).
 `iris_with_standoffs` contains the physical characteristics of 
-the quadcopter including the 3D mesh files to assemble the quadcopter.  
+the quadcopter including the 3D mesh files.  
 
 As for the plugins, the
 [libLiftDragPlugin](http://gazebosim.org/tutorials?tut=aerodynamics&cat=plugins) provides the ability to simulate the
@@ -73,11 +72,12 @@ to allow the FC to communicate with Gazebo. Its source code is available
 
 
 # Modifications
-Now that we've walked through all the pieces needed for Betaflight with SITL we will want to make some modifications to either our
-world, or quadcopter.  Thus far everything is included in the Gazebo
+Now that we've walked through all the pieces needed for Betaflight SITL we will want to make some modifications to either our
+world, or quadcopter, after all everything is open source!  Thus far everything is included in the Gazebo
 installation (obviously excluding Betaflight).
 Gazebo exposes some [environment
 variables](http://gazebosim.org/tutorials?tut=components) allowing us to specify
-our own locations for models, worlds, plugins, etc.
+our own locations for models, worlds, plugins, etc. So  set these environment
+variables, clone/fork these repos, and get hacking! 
 
 
