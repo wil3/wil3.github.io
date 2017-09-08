@@ -33,14 +33,21 @@ API we can then send RC commands to the FC and control the drone in a simulated
 environment.  
 
 
-Before we send commands to the FC we need to get the quadcopter running in the simulated environment. First run the FC,
-```
-./obj/main/betaflight_SITL.elf
-```
-And then start Gazebo with the ArduCopter demo,
+Before we send commands to the FC we need to get the quadcopter running in the simulated environment. First start Gazebo,
 ```
 cd /usr/share/gazebo-8/worlds
 gazebo --verbose ./iris_arducopter_demo.world
+```
+
+Then from your BetaFlight source start the FC in SITL,
+```
+./obj/main/betaflight_SITL.elf
+```
+
+You will know the Betaflight FC has connected to the Gazebo ArduCopter if you
+see the following in the Gazebo output,
+```
+[Dbg] [ArduCopterPlugin.cc:573] ArduCopter controller online detected.
 ```
 
 # Demo Explained
