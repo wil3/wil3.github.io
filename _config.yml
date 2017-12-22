@@ -23,7 +23,7 @@ footer-links:
   instagram:
   linkedin: williamkoch3rd
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: true # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: wil_koch
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -39,7 +39,7 @@ google_analytics: UA-61604401-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://blog.wfk.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
