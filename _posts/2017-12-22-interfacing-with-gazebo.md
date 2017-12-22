@@ -14,9 +14,10 @@ repo.
 Once you have all of the proto files you need to create a language bindings for  Java, C++ or Python using the `protoc'
 tool (I believe other languages are supported too). Install by,
 
-```
+{% highlight text %}
 sudo apt-get install protobuf-compiler
-```
+{% endhighlight %}
+
 
 Well now look at how to generate bindings for Python. 
 Official documentation can be read
