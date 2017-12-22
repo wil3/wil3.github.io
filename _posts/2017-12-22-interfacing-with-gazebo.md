@@ -27,10 +27,10 @@ The protoc tool will compile the .proto files into the corresponding Python
 files that can be interfaced with your code. The following command will place
 all the generated files in build/gen.
 
-~~~
+{% highlight text %}
 protoc --python_out build/gen --proto_path gazebo/gazebo/msgs
 gazebo/gazebo/msgs/*.proto
-~~~
+{% endhighlight %}
 
 
 There is a [bug](https://github.com/google/protobuf/issues/1491) currently that will not allow the generated Python code to use
@@ -44,9 +44,9 @@ signify the directory is a package and then run the
 fix all the imports. The following command will fix imports (-f import) and
 overwrite the fixed files in the msg/ directory. 
 
-~~~
+{% highlight text %}
 2to3 -w -f import msg/
-~~~
+{% endhighlight %}
 
 
 # PyGazebo
@@ -58,9 +58,9 @@ protobuf messages for Gazebo 8. For future releases you just updated the Python
 bindings as explained previously.  
 Just clone this branch and install,
 
-~~~
+{% highlight text %}
 sudo pip3 install .
-~~~
+{% endhighlight %}
 
 The library uses asyncio and is a bit confusing. I'll include some examples in a
 future post.
