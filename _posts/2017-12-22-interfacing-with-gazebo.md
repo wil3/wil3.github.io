@@ -5,7 +5,7 @@ Title: Interfacing with Gazebo
 Gazebo exposes a Google Protobuf API interface to interface with the simulator,
 allowing one to read the state of the simulator and also control the simulator.
 The API documentation can be found
-[here](http://osrf-distributions.s3.amazonaws.com/gazebo/msg-api/dev/classes.html).
+[here](http://osrf-distributions.s3.amazonaws.com/gazebo/msg-api/7.1.0/classes.html).
 
 The actual Google ProtoBuf message definitions (proto files) for Gazebo can be found in
 [gazebo/msgs/](https://bitbucket.org/osrf/gazebo/src/dce3030d87304270475ddb742e9be402bc383b5c/gazebo/msgs/?at=default)
