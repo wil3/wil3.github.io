@@ -32,7 +32,7 @@ set debug_mode = nn_output
 From the blackbox explorer create a new graph and select the debug values from
 the drop down menu.
 
-[alt text]()
+![alt text](https://raw.githubusercontent.com/wil3/wil3.github.io/master/images/blackbox-custom-data.png "Blackbox Explorer")
 
 # Future work
 
