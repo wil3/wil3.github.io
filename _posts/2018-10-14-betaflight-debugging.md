@@ -2,7 +2,7 @@
 This quick tutorial  is to show how arbitrary data can be logged to the Betaflight blackbox logger which is helpful during development. Note this is for betaflight 3.3.3, new versions may be different.
 
 
-In `build/debug.c` there is a global array variable called [debug](https://github.com/betaflight/betaflight/blob/master/src/main/build/debug.c#L26). This has a size defined by DEBUG16_VALUE_COUNT which defaults to 4.
+In `build/debug.c` there is a global array variable called [debug](https://github.com/betaflight/betaflight/blob/master/src/main/build/debug.c#L26). This has a size defined by `DEBUG16_VALUE_COUNT` which defaults to 4.
 This allows the placement of 4 debug values that can be written to the blackbox log.
 
 1. Register the debug type in Betaflight
@@ -11,6 +11,7 @@ First add a string representing the data to be logged to
 
 2. Log your data
 In your code you can now log your data. First include the debug header, and then log the data, for example
+
 
 ```C
 #include "build/debug.h"
@@ -25,9 +26,11 @@ Flash the firmware, open up the configurator and go to the command line. Set
 the `debug_mode` to whatever string value you set in `debug.c` (this is case
 insensitive ). For example,
 
+
 ```
 set debug_mode = nn_output
 ```
+
 4. View your logged data
 From the blackbox explorer create a new graph and select the debug values from
 the drop down menu.
