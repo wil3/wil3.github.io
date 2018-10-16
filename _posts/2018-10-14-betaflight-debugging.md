@@ -13,7 +13,7 @@ First add a string representing the data to be logged to
 In your code you can now log your data. First include the debug header, and then log the data, for example
 
 
-```C
+```c
 #include "build/debug.h"
 ....
 if (debugMode == DEBUG_NN_OUT) {
