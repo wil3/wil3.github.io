@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template  -->
     <link href="css/resume.css" rel="stylesheet">
+    <link href="css/extra.css" rel="stylesheet">
 
   </head>
 
@@ -43,13 +44,17 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <!--
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Selected Publications</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
-          -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#teach">Teaching</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -65,35 +70,222 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">William Frederick  
+          <h1 class="mb-4">William Frederick  
             <span class="text-primary">Koch</span> III
           </h1>
-          <div class="subheading mb-5">Hudson, MA 01749 · 
-            <a href="mailto:wfkoch@gmail.com">wfkoch@gmail.com</a>
-          </div>
-          <p class="lead mb-5">My name is Wil Koch (pronounced 'cook') and I am a PhD student at Boston University advised by Azer Bestavros. My current research is focused on improving multi-rotor drone flight performance. I have also conducted research in cyber-security primarily in developing defenses for automated attacks. Before returning to academia I was involved in a few start-ups and worked as a software engineer in the aerospace industry. I co-founder CT Hackerspace Inc, Connecticut's oldest and largest hackerspace as well as founded Boston Drone Racing, FPV quadcopter racing and hacking club in Boston. When I'm not behind a computer, you can find me drone racing, or depending on the season snowboarding, surfing or off exploring somewhere in the woods.
+
+          <div class="subheading mb-5 align-items-center  justify-content-start clearfix">
+
+			<div class="float-left mr-4">
+				Hudson, MA 01749  
+			</div>
+
+			<div class="float-left mr-4">
+				wfkoch at gmail dot com
+			</div>
+
+			<div class="float-left">
+			  <div class="social-icons-sm">
+				<a href="https://www.linkedin.com/in/williamkoch3rd" target="_blank">
+				  <i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://github.com/wil3" target="_blank">
+				  <i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.instagram.com/fpvtrip/" target="_blank">
+				  <i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://scholar.google.com/citations?user=7fJB07oAAAAJ" target="_blank">
+				  <i class="fa fa-graduation-cap"></i>
+				</a>
+			  </div>
+			</div>
+
+          </div> <!-- end subheading -->
+          
+          <div class="lead mb-5">
+              <h3>Mission </h3>
+          <p class="lead mb-5">
+            To research and develop next generation flight control systems through the integration and aid of machine learning, artificial intelligence and simulations. 
           </p>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/williamkoch3rd" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/wil3" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://twitter.com/wil_koch" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/fpvtrip/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=7fJB07oAAAAJ" target="_blank">
-              <i class="fa fa-graduation-cap"></i>
-            </a>
+          <h3>Bio</h3>
+          <p class="lead mb-5">
+              <!--Wil Koch is leader, passion, motivation dedication, creative, driven -->
+
+              Wil Koch received his BS in computer engineering from University of Rhode Island where he developed interests in machine learning and cyber security.
+              After graduation he worked as a software engineer for six years on the Sikorsky CH-53K King Stallion helicopter project before returning back to academia to receive his MS in machine learning from Stevens Institute of Technology.
+              To focus on his growing interest in cyber security he came to Boston University for his PhD  
+              where he published a number of papers in a wide area of cyber security including static and dynamic malware analysis, vulnerability analysis, cyber defense and attacks and mobile security.  
+
+             In 2017, Wil was introduced to first-person-view (FPV) drone racing and was immediately drawn to the sport for his love of flight, racing and engineering.   
+             This passion drove a shift in his research which fused together machine learning and flight control 
+              leading to the development of the worlds first neural network flight control firmware, Neuroflight.
+
+
+              As a leader and someone who encourages continued learning 
+              Wil has co-founded CT Hackerspace, Connecticut's oldest and largest hackerspace and founded Boston Drone Racing, an FPV drone racing and hacking club.
+          </p>
+          <p class="lead">
+              Wil Koch will be completing his PhD during the summer of 2019 and is currently looking for new opportunities. You can find his CV <a href="" target="_blank">here</a>, and his resume <a href="" target="_blank">here</a>. 
+          </p>
           </div>
         </div>
       </section>
 
       <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="https://raw.githubusercontent.com/wil3/neuroflight/v3.3.x-neuroflight/logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Neuroflight</h3>
+          <p>Neuroflight is the first open source neuro-flight controller software (firmware) for remotely piloting multi-rotors and fixed wing aircraft. Neuroflight's primary focus is to provide optimal flight performance. </p>
+          <a class="btn btn-primary" target="_blank" href="https://github.com/wil3/neuroflight">View Project</a>
+        </div>
+      </div>
+      <!-- /.row -->
+<hr>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="img/gymfc.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>GymFC</h3>
+          <p>GymFC is an OpenAI Gym environment designed for synthesizing intelligent flight control systems using reinforcement learning. This environment is meant to serve as a tool for researchers to benchmark their controllers to progress the state-of-the art of intelligent flight control.</p>
+          <a class="btn btn-primary" target="_blank" href="https://github.com/wil3/gymfc">View Project</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+
+
+
+
+        </div>
+      </section>
+
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+        <div class="my-auto">
+          <h2 class="mb-5">Selected Publications</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Neuroflight: Next Generation Flight Control
+Firmware</h3>
+              <div class="mb-0"><b>William Koch</b>, Renato Mancuso, Azer Bestavros</div>
+              <p>Pre-print <a href="docs/neuroflight.pdf" target="_blank">PDF</a>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Reinforcement Learning for UAV Attitude Control</h3>
+              <div class="mb-0"><b>William Koch</b>, Renato Mancuso, Richard West, Azer Bestavros</div>
+              <p>
+                  ACM Transactions on Cyber-Physical Systems <a href="docs/gymfc.pdf" target="_blank">PDF</a>
+
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Identifier Binding Attacks and Defenses in Software-Defined Networks</h3>
+              <div class="mb-0">Samuel Jero, <b>William Koch</b>, Rickard Skowyra, Hamed Okhravi, Cristina Nita-Rotaru, David Bigelow</div>
+              <p>
+                  USENIX Security Symposium <a href="docs/binding.pdf" target="_blank">PDF</a>
+
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Semi-Automated Discovery of Server-Based Information Oversharing Vulnerabilities in Android Applications</h3>
+              <div class="mb-0"><b>William Koch</b>, Abdelberi Chaabane, Manuel Egele, William Robertson, Engin Kirda</div>
+              <p>
+                  International Symposium on Software Testing and Analysis (ISSTA) <a href="docs/sifon.pdf" target="_blank">PDF</a>
+
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2017</span>
+            </div>
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">PayBreak: Defense Against Cryptographic Ransomware</h3>
+              <div class="mb-0">Eugene Kolodenker, <b>William Koch</b>, Gianluca Stringhini, Manuel Egele</div>
+              <p>
+                  ACM Asia Conference on Computer and Communications Security (ASIACCS) <a href="docs/paybreak.pdf" target="_blank">PDF</a>
+
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">April 2017</span>
+            </div>
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Markov Modeling of Moving Target Defense Games</h3>
+              <div class="mb-0">Hoda Maleki, Saeed Valizadeh,<b>William Koch</b>, Azer Bestavros, Marten van Dijk</div>
+              <p>
+                  ACM Workshop on Moving Target Defense <a href="docs/mtd.pdf" target="_blank">PDF</a>
+
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">October 2016</span>
+            </div>
+          </div>
+
+          <div class="text-center">
+			  <a class="btn btn-primary" target="_blank" href="https://scholar.google.com/citations?user=7fJB07oAAAAJ">View All Publications</a>
+		  </div>
+
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <hr class="m-0">
+
+
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
@@ -101,9 +293,15 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Founder</h3>
+              <h3 class="mb-0">Founder/Organizer</h3>
               <div class="subheading mb-3">Boston Drone Racing</div>
-              <p></p>
+              <p>
+Boston Drone Racing (BDR) is a first-person view (FPV) unmanned aerial vehicle (UAV) racing and hacking club.  
+Born from academia, BDR fosters a learning environment and community to teach others how to fly and the knowledge and skills needed to get into the sport. Additionally BDR is actively applying theory and research to push the performance of the technologies used in the sport. 
+</p>
+<p>
+As founder, created website, logo and established communication and organization channels. Secured funding for racing track and supplies.  <a href="http://bostondrone.racing" target="_blank">Website</a>
+              </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">April 2017 - Present</span>
@@ -112,15 +310,19 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Cyber Security Researcher</h3>
+              <h3 class="mb-0">Cyber Security Intern</h3>
               <div class="subheading mb-3">MIT Lincoln Laboratory</div>
-              <p></p>
+              <p>
+                  Developed novel SDN attack called Persona Hijacking that breaks the bindings of
+all layers of the networking stack and fools the network
+infrastructure into believing that the attacker is the legitimate owner of the victim’s identifiers, which significantly increases persistence. Results have been published in USENIX Security Symposium. 
+              </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">January 2016 - June 2016</span>
             </div>
           </div>
-
+          <!--
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">CEO</h3>
@@ -131,12 +333,13 @@
               <span class="text-primary">October 2013 - August 2014</span>
             </div>
           </div>
+          -->
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Software Engineer</h3>
-              <div class="subheading mb-3">Sikorsky Aircraft</div>
-              <p>Lead software engineer on software components in the Sikorsky CH-53K Aircraft's Integrated Support System (ISS). Designed and implemented continuous integration system. Responsible for integration between third-party vendors.</p>
+              <div class="subheading mb-3">Sikorsky Aircraft (contracted by Sila Solutions)</div>
+              <p>Lead software engineer on several software applications for the Sikorsky CH-53K Aircraft's Integrated Support System (ISS). Designed and implemented continuous integration system. Responsible for integration between third-party vendors.</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2006 - January 2012</span>
@@ -147,7 +350,11 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Chairman/Co-founder</h3>
               <div class="subheading mb-3">CT Hackerspace</div>
-              <p></p>
+              <p>
+CT Hackerspace is Connecticut's oldest and largest hackerspace/makerspace. As a co-founder, established organization through the
+development of bylaws, identity, physical and web presence.   As chairman, ran monthly board meetings to facilitate in the growth and direction of the hackerspace. 
+<a href="https://archives.rep-am.com/2010/07/19/computer-hackers-break-bread-push-boundaries-of-technology/" target="_blank">Republican American Article</a> - <a href="http://www.cthackerspace.com" target="_blank">Website</a>
+              </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2010 - August 2011</span>
@@ -160,6 +367,40 @@
 
       <hr class="m-0">
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="teach">
+        <div class="my-auto">
+          <h2 class="mb-5">Teaching</h2>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Teaching Fellow</h3>
+              <div class="subheading mb-3">Boston University</div>
+              <p>Teaching fellow for CS-350 Fundamentals of Computing Systems. Designed lesson plans and taught discussion sections. Developed written and programming assignments. 
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Fall 2017, Spring 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Programming Instructor</h3>
+              <div class="subheading mb-3">iD Tech Camps - Princeton University</div>
+              <p>Created lesson plans for wide range of skill levels including object oriented fundamentals, polymorphism, exception handling and third-party library integration. Emphasized lessons on coding style and best practices not taught and enforced in academia. Advised students through  projects ranging from web crawlers to video games.
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2012-August 2012</span>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+      <hr class="m-0">
+
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
@@ -169,6 +410,7 @@
               <h3 class="mb-0">Boston University</h3>
               <div class="subheading mb-3">Doctor of Philosophy</div>
               <div>Computer Science - Intelligent Flight Control Systems</div>
+              <p>Thesis title: Flight Controller Synthesis via Deep Reinforcement Learning</p>
               <p>GPA: 3.7</p>
             </div>
             <div class="resume-date text-md-right">
@@ -181,6 +423,7 @@
             <h3 class="mb-0">Stevens Institute of Technology</h3>
               <div class="subheading mb-3">Masters of Science</div>
               <div>Computer Engineering - Machine Learning</div>
+              <p>Thesis title: A Framework for Assisting Learners by Incorporating Knowledge to Aid in Predicting Nerve Guidance Conduit Performance</p>
               <p>GPA: 3.8</p>
             </div>
             <div class="resume-date text-md-right">
@@ -210,6 +453,45 @@
           <h2 class="mb-5">Interests</h2>
           <p></p>
           <p class="mb-0"></p>
+
+			<div class="row text-center text-lg-left">
+				<div class="col-lg-3 col-md-4 col-xs-6">
+				  <a href="#" target="_blank" class="d-block mb-4 h-100">
+					<img class="img-fluid" src="img/racing.jpg" alt="Drone Racing">
+					<h3 class="interest-label">Drone Racing</h3>
+				  </a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-xs-6">
+				  <a href="#" target="_blank" class="d-block mb-4 h-100">
+					<img class="img-fluid" src="img/mach1.jpg" alt="UAV Design and Building">
+					<h3 class="interest-label">UAV Design</h3>
+				  </a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-xs-6">
+				  <a href="#" target="_blank" class="d-block mb-4 h-100">
+					<img class="img-fluid" src="img/cad.png" alt="CAD Modelling">
+					<h3 class="interest-label">CAD Modeling & 3D Printing</h3>
+				  </a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-xs-6">
+				  <a href="#" target="_blank" class="d-block mb-4 h-100">
+					<img class="img-fluid" src="img/backpacking.jpg" alt="Backpacking and Camping" width="600" height="400">
+					<h3 class="interest-label">Backpacking & Camping</h3>
+				  </a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-xs-6">
+				  <a href="#" target="_blank" class="d-block mb-4 h-100">
+					<img class="img-fluid" src="img/snowboarding.jpg" alt="Snowboarding">
+					<h3 class="interest-label">Snowboarding</h3>
+				  </a>
+				</div>
+
+			</div>
+
         </div>
       </section>
 
