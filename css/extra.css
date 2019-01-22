@@ -22,3 +22,7 @@ text-align:center;
 .social-icons-sm a:hover {
   background-color: #2665d1;
 }
+
+.pub-title {
+  text-transform: none;
+}
